@@ -4,6 +4,8 @@ import P2 from '../assets/projects/p2.jpeg'
 import P3 from '../assets/projects/p3.jpeg'
 import P4 from '../assets/projects/p4.jpeg'
 import P5 from '../assets/projects/p5.jpeg'
+import P6 from '../assets/projects/p6.jpeg'
+import P7 from '../assets/projects/p7.jpeg'
 import { MdOpenInNew } from "react-icons/md";
 import { motion } from 'framer-motion'
 
@@ -72,10 +74,10 @@ const Project = () => {
                 <div className='rounded-md shadow-md overflow-hidden'>
                     <img src={P3} className='w-full' alt="Project 1" />
                 </div>
-                <h3 className='font-semibold text-xl text-neutral-800 mt-5'> BMI Calculator Design </h3>
+                <h3 className='font-semibold text-xl text-neutral-800 mt-5'> Designr.Hub </h3>
                 <div className='flex flex-wrap'>
-                    <a className='flex flex-wrap gap-2 bg-neutral-900 w-24 p-2 m-2 rounded-3xl hover:bg-neutral-700 duration-150' href="#"> <p className='pl-2'>Open</p> <MdOpenInNew /> </a>
-                    <a className='p-1 m-2 text-neutral-800 hover:text-cyan-700 hover:border-b border-cyan-700 hover:duration-150' href=""> Source Code </a>
+                    <a className='flex flex-wrap gap-2 bg-neutral-900 w-24 p-2 m-2 rounded-3xl hover:bg-neutral-700 duration-150' href="https://designrhub.com/"> <p className='pl-2'>Open</p> <MdOpenInNew /> </a>
+                    <a className='p-1 m-2 text-neutral-800 hover:text-cyan-700 hover:border-b border-cyan-700 hover:duration-150' href="https://github.com/AnnurImat91/designr.hub"> Source Code </a>
                 </div>
             </motion.div>
             <motion.div 
@@ -102,8 +104,8 @@ const Project = () => {
             </motion.div>
             <motion.div 
                 className='mb-12 p-4 md:w-1/2'
-                whileInView={{ opacity: 1, y: 0 }}
-                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: -100 }}
                 transition={{
                     duration: 0.3,
                     ease: [0, 0.71, 0.2, 1.01],
@@ -122,7 +124,52 @@ const Project = () => {
                     <a className='p-1 m-2 text-neutral-800 hover:text-cyan-700 hover:border-b border-cyan-700 hover:duration-150' href="https://github.com/AnnurImat91/CodeAlpha_ImageGallery_ImatImansyah" target='_blank'> Source Code </a>
                 </div>
             </motion.div>
+            <motion.div 
+                className='mb-12 p-4 md:w-1/2'
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: 100 }}
+                transition={{
+                    duration: 0.3,
+                    ease: [0, 0.71, 0.2, 1.01],
+                    x: {
+                        damping: 1,
+                        stiffness: 100
+                    }
+                }}
+            >
+                <div className='rounded-md shadow-md overflow-hidden'>
+                    <img src={P6} className='w-full' alt="Project 1" />
+                </div>
+                <h3 className='font-semibold text-xl text-neutral-800 mt-5'> Suitmedia Project Test Frontend </h3>
+                <div className='flex flex-wrap'>
+                    <a className='flex flex-wrap gap-2 bg-neutral-900 w-24 p-2 m-2 rounded-3xl hover:bg-neutral-700 duration-150' href="https://project-fe-test-suitmedia-imatimans.vercel.app/"> <p className='pl-2'>Open</p> <MdOpenInNew /> </a>
+                    <a className='p-1 m-2 text-neutral-800 hover:text-cyan-700 hover:border-b border-cyan-700 hover:duration-150' href="https://gitlab.com/AnnurImat91/project-fe-test-suitmedia-imatimansyah" target='_blank'> Source Code </a>
+                </div>
+            </motion.div>
+            <motion.div 
+                className='mb-12 p-4 md:w-1/2'
+                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 100 }}
+                transition={{
+                    duration: 0.3,
+                    ease: [0, 0.71, 0.2, 1.01],
+                    x: {
+                        damping: 1,
+                        stiffness: 100
+                    }
+                }}
+            >
+                <div className='rounded-md shadow-md overflow-hidden'>
+                    <img src={P7} className='w-full' alt="Project 1" />
+                </div>
+                <h3 className='font-semibold text-xl text-neutral-800 mt-5'> Suitmedia Project Test UI/UX</h3>
+                <div className='flex flex-wrap'>
+                    <a className='flex flex-wrap gap-2 bg-neutral-900 w-24 p-2 m-2 rounded-3xl hover:bg-neutral-700 duration-150' href="https://project-fe-test-suitmedia-imatimans.vercel.app/"> <p className='pl-2'>Open</p> <MdOpenInNew /> </a>
+                    <a className='p-1 m-2 text-neutral-800 hover:text-cyan-700 hover:border-b border-cyan-700 hover:duration-150' href="https://gitlab.com/AnnurImat91/project-fe-test-suitmedia-imatimansyah" target='_blank'> Source Code </a>
+                </div>
+            </motion.div>
         </div>
+        <a className='flex justify-center items-center p-1 m-2 text-neutral-800 hover:text-cyan-700 hover:duration-150' href="#"> More on Github </a>
     </div>
   )
 }

@@ -5,6 +5,7 @@ import { FaBootstrap } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import viteLogo from '/vite.svg'
 import reactLogo from '../assets/svg/react.svg'
+import vueLogo from '../assets/svg/vue.svg'
 import javascriptLogo from '../assets/svg/javascript.svg'
 import html from '../assets/svg/html.svg'
 import css from '../assets/svg/css.svg'
@@ -12,6 +13,7 @@ import php from '../assets/svg/php.svg'
 import mysql from '../assets/svg/mysql.svg'
 import node from '../assets/svg/node-js.svg'
 import mongodb from '../assets/svg/mongodb.svg'
+import postgres from '../assets/svg/postgresql.svg'
 import figma from '../assets/svg/figma.svg'
 import framer from '../assets/svg/framer.svg'
 import express from '../assets/svg/express.svg'
@@ -48,6 +50,9 @@ const Skill = () => {
                     </div>
                     <div className='p-2 hover:-translate-y-3 duration-150'>
                         <img src={reactLogo} className='size-14 logo react animate-spin-slow' alt="React logo" />
+                    </div>
+                    <div className='p-2 hover:-translate-y-3 duration-150'>
+                        <img src={vueLogo} className='size-14 logo' alt="Vue logo" />
                     </div>
                     <div className='p-2 hover:-translate-y-3 duration-150'>
                         <img src={viteLogo} className='size-14' alt="Vite logo" />
@@ -96,6 +101,9 @@ const Skill = () => {
                     </div>
                     <div className='p-2 hover:translate-y-3 duration-150'>
                         <img src={mongodb} className='size-14 logo' alt="php logo" />
+                    </div>
+                    <div className='p-2 hover:translate-y-3 duration-150'>
+                        <img src={postgres} className='size-14 logo' alt="php logo" />
                     </div>
                 </div>
             </motion.div>
